@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GET and POST Requests Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    #result {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>GET and POST Requests Example</h1>
+
+  <h2>POST Request</h2>
+  <form id="postForm">
+    <label for="data">Enter some data:</label>
+    <input type="text" id="data" required>
+    <button type="submit">Send POST Request</button>
+  </form>
+
+  <h2>GET Request</h2>
+  <button id="getRequestBtn">Send GET Request</button>
+
+  <div id="result"></div>
+
+  <script src="post.js"></script>
+  <script src="get.js"></script>
+
+</body>
+
+</html>
