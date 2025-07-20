@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Course Details</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="course-title">Loading...</h1>
+        <p><strong>Instructor:</strong> <span id="course-instructor"></span></p>
+        <p><strong>Price:</strong> <span id="course-price"></span></p>
+        <p><strong>Description:</strong></p>
+        <p id="course-description"></p>
+        <p><strong>Rating:</strong> <span id="course-rating"></span></p>
+        <button onclick="enrollCourse()">Enroll Now</button>
+
+        <h2>Reviews</h2>
+        <div id="review-list">Loading reviews...</div>
+        <h2>Leave a Review</h2>
+        <form id="review-form">
+            <label for="rating">Rating (1–5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required />
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="3" required></textarea>
+
+            <input type="submit" value="Submit Review" />
+        </form>
+        <p id="review-message"></p>
+
+    </div>
+
+    <script src="js/courseDetails.js"></script>
+</body>
+
+</html>

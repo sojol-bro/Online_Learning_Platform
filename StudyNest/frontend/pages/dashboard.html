@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyNest - Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/courses.html">Courses</a>
+            <a href="/dashboard.html" class="active">Dashboard</a>
+            <a href="/cart.html">Cart</a>
+            <a href="/logout">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="purchased-courses">
+            <h2>Purchased Courses</h2>
+            <div id="my-courses"></div>
+        </section>
+
+        <section id="referral-section">
+            <h2>Referral Info</h2>
+            <p><strong>Your Promo Code:</strong> <span id="my-promocode"></span></p>
+            <p><strong>Total Earnings:</strong> ৳<span id="referral-earnings"></span></p>
+            <button onclick="redeemEarnings()">Redeem Balance</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 StudyNest. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+
+</html>
