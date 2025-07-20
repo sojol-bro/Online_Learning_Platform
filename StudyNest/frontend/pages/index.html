@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StudyNest - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>StudyNest</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="profile.html">Profile</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured-courses">
+            <h2>Featured Courses</h2>
+            <div class="course-list">
+
+                <div class="course-card">
+                    <h3>Course Title</h3>
+                    <p>Instructor: <span class="instructor-name"></span></p>
+                    <p>Price: <span class="price"></span></p>
+                    <p>Rating: ⭐⭐⭐⭐⭐</p>
+                    <a href="course-details.html?id=COURSE_ID" class="details-btn">View Details</a>
+                    <!-- Dynamically populated course cards -->
+                </div>
+        </section>
+
+        <section id="top-rated-courses">
+            <h2>Top Rated Courses</h2>
+            <div class="course-list">
+                <!-- Dynamically populated top rated courses -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 StudyNest. All rights reserved.</p>
+    </footer>
+
+    <script src="js/courses.js"></script>
+</body>
+
+</html>
